@@ -17,6 +17,8 @@
     h3 { font-size: 17px; margin: 24px 0 8px; }
     p { margin: 10px 0; }
     nav { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+    .languages { font-size: 14px; margin-top: 0; margin-bottom: 22px; gap: 16px; }
+    .languages [aria-current="page"] { font-weight: 700; color: #252723; }
     a { color: #315f49; text-underline-offset: 3px; overflow-wrap: anywhere; }
     section { scroll-margin-top: 24px; }
     ul, ol { padding-left: 23px; }
@@ -29,6 +31,7 @@
 <body>
 <main>
   <header>
+    <nav class="languages" aria-label="언어 선택"><a href="./" lang="ko" hreflang="ko" aria-current="page">한국어</a><a href="./en/" lang="en" hreflang="en">English</a><a href="./ja/" lang="ja" hreflang="ja">日本語</a></nav>
     <div class="brand">gring · HANGUL CLOCK</div>
     <h1>레트로 한글시계</h1>
     <p>아이폰을 책상 위 작은 한글 시계로. 크림·모노·레트로 그린으로 시간을 읽어보세요.</p>
@@ -42,6 +45,7 @@
       <li>아이폰을 가로 또는 세로로 놓고 사용할 수 있습니다. 선택한 설정은 앱을 다시 열어도 유지됩니다.</li>
       <li>플립 애니메이션, 효과음, 앱 사용 중 화면 켜두기를 설정에서 선택할 수 있습니다.</li>
     </ol>
+    <p>시계 화면의 시간과 날짜는 계속 한글로 표시됩니다. 설정과 사용 안내 등 조작 메뉴는 기기의 선호 언어에 따라 한국어·영어·일본어로 표시됩니다.</p>
     <p class="note">이 앱은 전면에 열어두고 사용하는 시계입니다. 아이폰 잠금 화면이나 기본 StandBy 화면을 바꾸지 않습니다. 시계와 테마는 인터넷 없이 사용할 수 있습니다.</p>
     <h3>시간이 다르게 보여요</h3>
     <p>아이폰의 설정 → 일반 → 날짜 및 시간에서 현재 시각과 시간대를 확인해 주세요. 앱은 한국 시간으로 고정하지 않고 현재 기기의 시간대를 따릅니다. 시간대를 변경했다면 앱을 다시 전면에 열어 확인해 주세요.</p>
