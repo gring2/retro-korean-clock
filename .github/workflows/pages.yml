@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir public
           cp index.html public/index.html
+          cp -R en ja public/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public
