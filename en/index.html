@@ -62,28 +62,37 @@
   </section>
   <section id="privacy">
     <h2>Privacy policy</h2>
-    <p>Effective date: October 18, 2026 · Applies to: Hangul Moment for iOS 1.0.0(3) and 1.0.1</p>
-    <p class="note">This notice describes data handling by version. Version 1.0.0(3) has no advertising measurement SDKs. Version 1.0.1 includes code prepared for future integration, but advertising measurement remains disabled.</p>
+    <p>Effective date: October 19, 2026 · Applies to: Hangul Moment for iOS 1.0.0(3) and 1.0.1 (build 6)</p>
+    <p class="note">This notice describes data handling by version. Version 1.0.0(3) has no advertising measurement SDKs. Version 1.0.1 (build 6) starts advertising measurement only after you allow tracking. Earlier preparation builds 1.0.1 (4 and 5) had measurement disabled; the consent-based measurement described below applies to build 6.</p>
     <h3>1. Information used by the clock and preferences</h3>
     <p>The app reads the system's current time and time zone to display the time and date. It does not use location permission. Clock time and date content and saved preferences are not sent outside your device.</p>
     <p>Your theme, date and seconds display, text size, dimming, flip animation, sound, keep-screen-awake preference, and whether the first-use guide has been shown are stored locally on your device in the app's own settings storage.</p>
     <h3>2. Version 1.0.0(3)</h3>
     <p>This version has no accounts, app server, advertising or analytics SDKs, or tracking features. The operator does not collect personal information or usage records through this version. It does not request access to photos, contacts, the microphone, location, or notifications.</p>
-    <h3>3. Version 1.0.1 — advertising measurement disabled</h3>
-    <p>Version 1.0.1 includes Meta App Events and TikTok App Events SDKs in preparation for future advertising measurement, but this version does not start the SDKs or request tracking permission. The app does not send personal information or usage activity off your device. All clock features work offline. There are no accounts or in-app ads, and the app does not request access to photos, contacts, the microphone, location, or notifications. Measurement cannot be enabled remotely in this version.</p>
-    <h3>4. Possible future measurement-enabled version — does not apply to 1.0.0 or 1.0.1</h3>
-    <p>If a future version enables advertising measurement, the Meta App Events and TikTok App Events SDKs will be used to measure installations and app launches resulting from our ads. There are no in-app ads or accounts. Clock time and date content and preferences are not sent.</p>
-    <p>The SDKs start only in a release with measurement enabled and after you grant Apple's App Tracking Transparency (ATT) permission. Installation, app launch and activation activity, advertising identifiers (IDFA) and device identifiers, and device, network and diagnostic information, such as an IP address, may then be sent to Meta and TikTok. These providers use the information for advertising measurement and install attribution.</p>
-    <p>If you do not initially allow tracking, the advertising measurement SDKs do not start. Withdrawing permission stops new measurement events sent by the app, but the SDKs may continue processing or sending information already received or stored. All clock and theme features remain available offline regardless of your choice. You can change permission in iPhone Settings → Privacy &amp; Security → Tracking.</p>
-    <p>Each recipient's policies govern the processing, retention, and deletion of information sent to it. See the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a> and <a href="https://ads.tiktok.com/i18n/official/policy/privacy">TikTok for Business Privacy Policy</a>, and <a href="https://ads.tiktok.com/i18n/official/policy/business-products-terms">TikTok Business Products (Data) Terms</a>. Deleting the app or withdrawing permission does not automatically delete information already sent. Send privacy requests, including access or deletion requests, to the support email above or through the relevant provider's privacy contact channels.</p>
-    <h3>5. Saved preferences and deletion</h3>
-    <p>Preferences remain on your device while you use the app. Deleting the app from your device also removes its local preferences. Device backups and restores follow your iOS settings and Apple's policies.</p>
+    <h3>3. Version 1.0.1 (build 6) — advertising measurement after consent</h3>
+    <p>Only after you allow Apple's App Tracking Transparency (ATT) permission, the app starts Meta App Events and TikTok App Events SDKs to measure installations and app launches resulting from our ads. If you initially decline tracking or permission is restricted, the SDKs do not start and advertising identifiers and measurement events are not sent. All clock features work offline regardless of your choice. There are no accounts or in-app ads.</p>
+    <p>After consent, the following categories of information are sent to Meta and TikTok. This information is processed in connection with device identifiers.</p>
+    <ul>
+      <li>Device ID: advertising identifier (IDFA), device, installation, and session identifiers</li>
+      <li>Product interaction: installation, app launch, and activation activity</li>
+      <li>Coarse location: the general area that can be inferred from the IP address used for communication. The app does not collect GPS or precise location or request location permission.</li>
+      <li>Other data types: device and request context, such as device model, operating system, language, and network information</li>
+      <li>Performance data: SDK performance information, such as request latency</li>
+      <li>Other diagnostic data: SDK diagnostic information, such as request errors</li>
+    </ul>
+    <p>Advertising measurement does not collect or send clock time and date content, saved preferences, names, email addresses, phone numbers, user accounts, purchases, screenshots, or crash reports. The app also does not request access to photos, contacts, the microphone, or notifications.</p>
+    <h3>4. Purposes and recipients</h3>
+    <p>The recipients are Meta and TikTok. Device IDs, product interaction, coarse location, and other contextual data are used for this app's advertising and marketing, third-party advertising services, and analytics, and may be used for advertising tracking by linking information across apps and websites. Device IDs are also used to operate the measurement SDKs. Performance and other diagnostic data are used for analytics and app functionality and are not used for advertising tracking.</p>
+    <p>Each recipient's policies govern the processing, retention, and deletion of information sent to it. See the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a> and <a href="https://ads.tiktok.com/i18n/official/policy/privacy">TikTok for Business Privacy Policy</a>, and <a href="https://ads.tiktok.com/i18n/official/policy/business-products-terms">TikTok Business Products (Data) Terms</a>. Send privacy requests, including access or deletion requests, to the support email above or through the relevant provider's privacy contact channels.</p>
+    <h3>5. Permission changes, storage, and deletion</h3>
+    <p>You can change tracking permission in iPhone Settings → Privacy &amp; Security → Tracking. Withdrawing permission stops new measurement events sent by the app. Information already received or stored by an SDK, and requests whose transmission began before withdrawal, may still be processed afterward. We cannot guarantee recall of transmitted requests or remote deletion of information held by recipients. Deleting the app or withdrawing permission does not automatically delete information already sent.</p>
+    <p>Clock preferences remain on your device while you use the app. Deleting the app from your device also removes its local preferences. Device backups and restores follow your iOS settings and Apple's policies.</p>
     <h3>6. Email support</h3>
     <p>If you choose to contact us by email, your email address and message are sent through the email service. The operator reads them to respond to your inquiry. The app does not automatically send emails or inquiry content. For requests about information in your inquiry, contact the support address above.</p>
     <h3>7. This support website</h3>
     <p>This page is hosted on GitHub Pages and uses no additional analytics scripts or advertising. Information about visits to the website may be subject to the hosting provider's <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
     <h3>8. Changes and contact</h3>
-    <p>Before a future version changes data handling or enables advertising measurement, this notice will be updated to describe that version. The operator and privacy contact are listed in the Contact section above.</p>
+    <p>Before a future version changes data handling, this notice will be updated to describe that version. The operator and privacy contact are listed in the Contact section above.</p>
   </section>
   <footer>© 2026 gring · Hangul Moment</footer>
 </main>
