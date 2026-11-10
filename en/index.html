@@ -34,7 +34,7 @@
     <nav class="languages" aria-label="Language"><a href="../" lang="ko" hreflang="ko">한국어</a><a href="./" lang="en" hreflang="en" aria-current="page">English</a><a href="../ja/" lang="ja" hreflang="ja">日本語</a></nav>
     <div class="brand">gring · HANGUL MOMENT</div>
     <h1>Hangul Moment</h1>
-    <p>A small Korean clock for your iPhone and your desk. Choose Cream, Mono, or Retro Green.</p>
+    <p>A Korean clock and calendar for your iPhone. Read time and dates in Cream, Mono, or Retro Green.</p>
     <nav aria-label="Page sections"><a href="#support">User guide</a><a href="#contact">Contact</a><a href="#privacy">Privacy policy</a></nav>
   </header>
   <section id="support">
@@ -51,6 +51,10 @@
     <h3>Lock Screen clock (version 1.3.0 and later)</h3>
     <p>Launch the app once. Touch and hold your Lock Screen, choose Customize, and add Hangul Moment → Hangul Lock Screen Clock in the widget area, then tap Done. The app also includes a guide under Display → Lock Screen Widget. The widget shows the local hour and minute in two lines of Korean. Tap it to open the app’s clock screen.</p>
     <p>The widget area’s placement, tint, and update timing depend on iOS and your wallpaper settings. The widget does not replace the system date or clock, or guarantee an update exactly at every minute boundary. Usage sharing is not required to use it.</p>
+    <h3>Calendar and events (version 1.4.0 and later)</h3>
+    <p>Open Calendar from the bottom tab or the daily calendar widget. Tap a numeric date to go directly to that day; use the month and year above to choose another month. A small fill marks today. Selecting October 9 in the calendar shows the Hangeul Day character.</p>
+    <p>Connect events optionally under Settings → Apple Calendar. After granting iOS full calendar access, choose the calendars to display. Dots identify days with events, and the selected day's event list is available. The app does not add, change, or delete events. The clock and basic calendar remain available without connecting.</p>
+    <p>The app reads events already available in the device calendar, without a separate iCloud login. Changes from iCloud or another account appear after iOS syncs them to the device. The clock and basic calendar work offline; event freshness depends on device sync settings and network availability.</p>
     <h3>The time looks wrong</h3>
     <p>Check your iPhone's current time and time zone under Settings → General → Date &amp; Time. The app follows your device's time zone; it is not fixed to Korean time. After changing the time zone, bring the app to the foreground again.</p>
     <h3>The app or settings stopped responding</h3>
@@ -66,14 +70,18 @@
   </section>
   <section id="privacy">
     <h2>Privacy policy</h2>
-    <p>Notice updated: November 4, 2026 · Applies to: Hangul Moment for iOS 1.0.0(3), 1.0.1 (build 6), 1.1.0 (build 7), 1.2.0 (build 8), 1.2.1 (build 10), 1.3.0 (build 11), and 1.3.1 (build 12)</p>
+    <p>Notice updated: November 11, 2026 · Applies to: Hangul Moment for iOS 1.0.0(3), 1.0.1 (build 6), 1.1.0 (build 7), 1.2.0 (build 8), 1.2.1 (build 10), 1.3.0 (build 11), 1.3.1 (build 12), 1.3.2 (builds 13 and 14), and 1.4.0 (build 19)</p>
     <p class="note">This notice describes data handling by version. Version 1.0.0(3) has no advertising or analytics SDKs. Version 1.0.1 (build 6) and released version 1.1.0 (build 7) measure advertising performance through Meta and TikTok after tracking permission; they do not include Firebase usage analytics. Starting with version 1.2.0 (build 8), Firebase usage analytics begins only when you separately enable usage sharing. Earlier preparation builds 1.0.1 (4 and 5) had measurement disabled.</p>
     <h3>1. Information used by the clock and preferences</h3>
     <p>The app reads the system's current time and time zone to display the time and date. It does not use location permission. The time and date displayed by the clock are not sent outside your device. Preferences are stored locally. In version 1.2.0 (build 8) and later, enabling usage sharing sends the selected preferences and usage information described below for analytics.</p>
     <p>Your theme, date and seconds display, text size, dimming, flip animation, sound, keep-screen-awake preference, and whether the first-use guide has been shown are stored locally on your device in the app's own settings storage.</p>
+    <h3>1-1. Version 1.4.0 — displaying events from selected device calendars</h3>
+    <p>Calendar connection is optional and off by default, separately from advertising tracking and usage sharing. iOS requires full access to read events, but this app only reads them and does not add, change, or delete events. Calendar names, sources, colors, and identifiers are used in the selection screen. For selected calendars and the requested day or month, the app reads event titles, start/end times, all-day status, calendar, color, and location to make the event list and event-day dots.</p>
+    <p>Event content and monthly event-day results are processed only in device memory, without being saved to a separate app file or server. The connection choice, selected calendar identifiers, and reconfirmation state are saved in local preferences. Disconnecting or losing permission stops reads and clears displayed event information. Turn the connection off in the app or change permission in iOS Settings; deleting the app also removes its local selection preferences. Sync and retention by the original calendar provider, such as iCloud, follow that account's and iOS settings.</p>
+    <p>Event titles, locations, dates, times, contents, presence or counts, and calendar names, sources, and identifiers are not sent to the operator's servers, Google/Firebase, Meta, TikTok, or the widget-signal relay. Granting calendar access does not turn on usage sharing.</p>
     <h3>2. Version 1.0.0(3)</h3>
     <p>This version has no accounts, app server, advertising or analytics SDKs, or tracking features. The operator does not collect personal information or usage records through this version. It does not request access to photos, contacts, the microphone, location, or notifications.</p>
-    <h3>3. Versions 1.0.1 (build 6), 1.1.0 (build 7), 1.2.0 (build 8), 1.2.1 (build 10), 1.3.0 (build 11), and 1.3.1 (build 12) — advertising measurement after consent</h3>
+    <h3>3. Versions 1.0.1 (build 6), 1.1.0 (build 7), 1.2.0 (build 8), 1.2.1 (build 10), 1.3.0 (build 11), 1.3.1 (build 12), 1.3.2 (builds 13 and 14), and 1.4.0 (build 19) — advertising measurement after consent</h3>
     <p>Only after you allow Apple's App Tracking Transparency (ATT) permission, the app starts Meta App Events and TikTok App Events SDKs to measure installations and app launches resulting from our ads. If you initially decline tracking or permission is restricted, the SDKs do not start and advertising identifiers and measurement events are not sent. All clock features work offline regardless of your choice. There are no accounts or in-app ads.</p>
     <p>After consent, the following categories of information are sent to Meta and TikTok. This information is processed in connection with device identifiers.</p>
     <ul>
@@ -94,6 +102,8 @@
       <li>Time the clock screen is active in the foreground, whether a clock session reaches five cumulative active minutes, the theme and screen orientation, and changes to date, seconds, text size, dimming, animation, sound, and keep-screen-awake preferences. Time in settings, while locked, or in the background is excluded; this does not measure time spent looking at the screen.</li>
       <li>Counts of configured clock and calendar widgets observed when the app successfully queries their configuration. From version 1.3.0, this also includes observed Lock Screen clock widget counts. This does not measure widget impressions or viewing time.</li>
       <li>From version 1.3.0, opening the widget setup guide and opening the app through the allowed widget URL route. These are app-side observations, not proof of widget impressions or completed installation.</li>
+      <li>From 1.3.2 (build 14), with the same optional usage sharing enabled, the app sends widget operation states, numeric HTTP response and network error codes, and the widget build number to Google while active in the foreground to diagnose issues. Diagnostic fields exclude raw identifiers, URLs, keys, and free-text error descriptions.</li>
+      <li>From 1.4.0, calendar visits and entry routes; action types such as date navigation, date selection, and return to today; connection, selection-editing, cancellation, and completed-connection steps; permission states; and query success/failure and latency ranges. Menu navigation, views of settings, help, and date-selection pages, and reset confirmations/cancellations are included. Allowed events carry a product analytics revision and app build number to analyze feature use and return visits. Selected dates, event contents, presence or counts, calendar names/identifiers, opening or closing event lists, and individual event interactions are not recorded.</li>
       <li>Basic context such as device model, operating system, app version, and language, and a general area such as country or region inferred from the connection's IP address. GPS and precise location are not collected.</li>
     </ul>
     <p>This information is linked to an app-instance identifier, so we do not guarantee it is anonymous. Usage events do not include names, email addresses, phone numbers, accounts, free-form text, or screenshots. We do not use a screen-recording or crash-collection SDK. This Firebase configuration uses a module without advertising identifier (IDFA) collection capability and disables vendor identifier (IDFV) collection. Ad storage, ad user data, and ad personalization are denied. Separate Meta and TikTok advertising measurement follows the ATT notice above.</p>
